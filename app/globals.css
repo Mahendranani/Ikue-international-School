@@ -1,0 +1,42 @@
+@import '../public/css/main.css';
+@import '../public/css/admissions-new.css';
+
+/* Add any Next.js specific global styles here */
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+}
+
+body {
+    color: rgb(var(--foreground-rgb));
+    background: white;
+    overflow-x: hidden;
+}
+
+/* Mobile topbar marquee */
+@media (max-width: 768px) {
+    .topbar-marquee-wrapper {
+        overflow: hidden;
+        flex: 1;
+        position: relative;
+        white-space: nowrap;
+        margin-right: 15px;
+    }
+
+    .topbar-marquee-wrapper .topbar-contact {
+        display: inline-flex;
+        animation: marquee-right-to-left 12s linear infinite;
+        width: max-content;
+    }
+
+    @keyframes marquee-right-to-left {
+        0% {
+            transform: translateX(100vw);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+}
