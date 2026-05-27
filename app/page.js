@@ -7,8 +7,15 @@ export default function Home() {
             <PopupModal />
             {/* HERO SECTION */}
             <section className="home-hero">
-                <video autoPlay loop muted playsInline className="hero-video">
-                    <source src="/IKUE%20School.mp4" type="video/mp4" />
+                <video 
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="hero-video"
+                >
+                    <source src="/IKUE School.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
                 </video>
                 <div className="hero-overlay"></div>
                 <div className="container hero-container">

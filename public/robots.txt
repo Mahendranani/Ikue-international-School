@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ikeuinternational.in
+
+# Sitemaps
+Sitemap: https://ikeuinternational.in/sitemap.xml

@@ -1,0 +1,350 @@
+/* ── ADMISSIONS FULL-WIDTH BANNER (same pattern as about page) ── */
+.page-hero--admissions {
+  min-height: 52vh;
+  padding: 80px 0 70px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.page-hero--admissions .container {
+  position: relative;
+  z-index: 1;
+}
+
+.page-hero__label {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffca28;
+  margin-bottom: 12px;
+}
+
+.page-hero--admissions h1 {
+  margin-bottom: 16px;
+}
+
+.page-hero__text {
+  max-width: 640px;
+  margin: 0 auto 28px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+.page-hero__btns {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ── VENCAP STYLE PREMIUM LAYOUT ─────────────────────── */
+.vencap-hero {
+    position: relative;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    background-color: #0c0c0c;
+    overflow: hidden;
+    color: var(--white);
+}
+
+.vencap-hero-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 100%;
+    z-index: 1;
+}
+
+.vencap-hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.vencap-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.vencap-hero-content {
+    max-width: 600px;
+}
+
+.vencap-hero-content h1 {
+    font-size: clamp(40px, 6vw, 70px);
+    line-height: 1.1;
+    font-weight: 800;
+    margin: 20px 0;
+}
+
+.vencap-hero-label {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffca28;
+}
+
+.vencap-hero-content p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 30px;
+}
+
+.vencap-hero-btns {
+    display: flex;
+    gap: 20px;
+}
+
+.split-section {
+    padding: 100px 0;
+}
+
+.split-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.split-header .left {
+    max-width: 500px;
+}
+
+.split-header .right {
+    max-width: 500px;
+    text-align: right;
+}
+
+.split-header-vcap h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #1a1a1a;
+}
+
+.split-grid-vcap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.vcap-feature-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.vcap-feature-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.vcap-icon-wrap {
+    width: 60px;
+    height: 60px;
+    background: #820000;
+    color: white;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.vcap-feature-box.blue .vcap-icon-wrap {
+    background: var(--maroon);
+}
+
+.vcap-feature-box.dark .vcap-icon-wrap {
+    background: var(--maroon);
+}
+
+.vcap-feature-box h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+.vcap-feature-box p {
+    font-size: 14.5px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.admissions-table-wrap {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 10px 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+    border: 1px solid #eee;
+}
+
+.admission-line {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    align-items: center;
+}
+
+.admission-line:last-child {
+    border-bottom: none;
+}
+
+.adm-title h4 {
+    font-size: 19px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+}
+
+.adm-title span {
+    font-size: 13px;
+    color: #888;
+}
+
+.adm-stat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.pulse-dot-vcap {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #25d366;
+    position: relative;
+}
+
+.pulse-dot-vcap.active::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    border: 2px solid #25d366;
+    animation: vcap-pulse-ring 2s infinite;
+}
+
+@keyframes vcap-pulse-ring {
+    0% {
+        transform: scale(0.5);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+.pulse-dot-vcap.warning {
+    background: #f97316;
+}
+
+.pulse-dot-vcap.warning::after {
+    border-color: #f97316;
+}
+
+.adm-btn-vcap {
+    text-align: right;
+}
+
+.vcap-btn-outline {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    border: 2px solid #820000;
+    color: #820000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.vcap-btn-outline:hover {
+    background: #820000;
+    color: white;
+}
+
+.vcap-img-block {
+    width: 100%;
+    height: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+}
+
+.vcap-img-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 991px) {
+    .vencap-hero {
+        min-height: 60vh;
+    }
+
+    .vencap-hero-bg {
+        width: 100% !important;
+        opacity: 0.3;
+        clip-path: none !important;
+    }
+
+    .vencap-hero-content {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .vencap-hero-btns {
+        justify-content: center;
+    }
+
+    .split-header {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .split-header .right {
+        text-align: center;
+    }
+
+    .split-grid-vcap {
+        grid-template-columns: 1fr;
+    }
+
+    .admission-line {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .adm-stat {
+        justify-content: center;
+    }
+
+    .adm-btn-vcap {
+        text-align: center;
+    }
+
+    .vcap-img-block {
+        height: 350px;
+    }
+}
